@@ -1,0 +1,30 @@
+{
+    "name": "dimacros/certificate-generator",
+    "description": "Plugin para generar certificados en PDF",
+    "type": "wp-plugin",
+    "autoload": {
+        "psr-4": {
+            "Dimacros\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "require": {
+        "mpdf/mpdf": "^7.1",
+        "twig/twig": "^2.0",
+        "paragonie/random_compat": "^2.0",
+        "drewjbartlett/wordpress-eloquent": "^0.2.1"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "dimacros",
+            "email": "dimacros@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symfony/var-dumper": "^4.2"
+    }
+}
